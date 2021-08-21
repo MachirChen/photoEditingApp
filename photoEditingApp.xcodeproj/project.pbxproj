@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		255D5DED26CBEBB20072CCDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D5DEC26CBEBB20072CCDB /* AppDelegate.swift */; };
 		255D5DEF26CBEBB20072CCDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D5DEE26CBEBB20072CCDB /* SceneDelegate.swift */; };
-		255D5DF126CBEBB20072CCDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D5DF026CBEBB20072CCDB /* ViewController.swift */; };
 		255D5DF426CBEBB20072CCDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255D5DF226CBEBB20072CCDB /* Main.storyboard */; };
 		255D5DF626CBEBB40072CCDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255D5DF526CBEBB40072CCDB /* Assets.xcassets */; };
 		255D5DF926CBEBB40072CCDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255D5DF726CBEBB40072CCDB /* LaunchScreen.storyboard */; };
+		255D5E0126CBF8F10072CCDB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D5E0026CBF8F10072CCDB /* MainViewController.swift */; };
+		255D5E0326CBF9D10072CCDB /* EditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D5E0226CBF9D10072CCDB /* EditingViewController.swift */; };
+		255D5E0526CC0B110072CCDB /* ImageStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D5E0426CC0B110072CCDB /* ImageStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		255D5DE926CBEBB20072CCDB /* photoEditingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photoEditingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		255D5DEC26CBEBB20072CCDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		255D5DEE26CBEBB20072CCDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		255D5DF026CBEBB20072CCDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		255D5DF326CBEBB20072CCDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		255D5DF526CBEBB40072CCDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		255D5DF826CBEBB40072CCDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		255D5DFA26CBEBB40072CCDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		255D5E0026CBF8F10072CCDB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		255D5E0226CBF9D10072CCDB /* EditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingViewController.swift; sourceTree = "<group>"; };
+		255D5E0426CC0B110072CCDB /* ImageStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,10 @@
 			children = (
 				255D5DEC26CBEBB20072CCDB /* AppDelegate.swift */,
 				255D5DEE26CBEBB20072CCDB /* SceneDelegate.swift */,
-				255D5DF026CBEBB20072CCDB /* ViewController.swift */,
 				255D5DF226CBEBB20072CCDB /* Main.storyboard */,
+				255D5E0226CBF9D10072CCDB /* EditingViewController.swift */,
+				255D5E0026CBF8F10072CCDB /* MainViewController.swift */,
+				255D5E0426CC0B110072CCDB /* ImageStatus.swift */,
 				255D5DF526CBEBB40072CCDB /* Assets.xcassets */,
 				255D5DF726CBEBB40072CCDB /* LaunchScreen.storyboard */,
 				255D5DFA26CBEBB40072CCDB /* Info.plist */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				255D5DF126CBEBB20072CCDB /* ViewController.swift in Sources */,
 				255D5DED26CBEBB20072CCDB /* AppDelegate.swift in Sources */,
+				255D5E0326CBF9D10072CCDB /* EditingViewController.swift in Sources */,
 				255D5DEF26CBEBB20072CCDB /* SceneDelegate.swift in Sources */,
+				255D5E0526CC0B110072CCDB /* ImageStatus.swift in Sources */,
+				255D5E0126CBF8F10072CCDB /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +300,9 @@
 				DEVELOPMENT_TEAM = BG5KQAM479;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = photoEditingApp/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = photoEditingApp;
+				INFOPLIST_KEY_CFBundleName = photoEditingApp;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,6 +331,9 @@
 				DEVELOPMENT_TEAM = BG5KQAM479;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = photoEditingApp/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = photoEditingApp;
+				INFOPLIST_KEY_CFBundleName = photoEditingApp;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
